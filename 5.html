@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5
+	</title>
+</head>
+<body>
+    <script>
+		function sum_f(arg1,arg2){
+		return arg1 + arg2
+		};
+		
+		function difference_f(arg1,arg2){
+		return arg1 - arg2
+		};
+		
+		function multiplication_f(arg1,arg2){
+		return arg1 * arg2
+		};
+		
+		function division_f(arg1,arg2){
+		return arg1 / arg2
+		};
+		
+		let arg1 = Number(prompt("Введите первое число"));
+		let arg2 = Number(prompt("Введите второе число"));	
+		let operation = prompt("Введите операцию: +, -, *, /");
+		
+		function mathOperation(arg1, arg2, operation){
+			switch(operation) {
+				case '+':
+					f1 = sum_f(arg1,arg2);
+					alert("Сумма: " + arg1 + " + " + arg2 + " = " + f1);
+					break;
+				case '-':
+					f2 = difference_f(arg1,arg2);
+					alert("Разность: " + arg1 + " - " + arg2 + " = " + f2);
+					break;
+				case '*':
+					f3 = multiplication_f(arg1,arg2);
+					alert("Произведение: " + arg1 + " * " + arg2 + " = " + f3);
+					break;
+				
+				case '/':
+					f4 = division_f(arg1,arg2);
+					alert("Деление: " + arg1 + " / " + arg2 + " = " + f4);
+					break;
+				default:
+					alert("Введены неверные значения!");
+			}
+		}
+		
+		mathOperation(arg1, arg2, operation)
+		
+
+
+    </script>
+</body>
+</html>
